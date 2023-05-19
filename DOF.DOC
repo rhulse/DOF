@@ -1,0 +1,493 @@
+
+Welcome to DOF...the depth of field calculator for photographers.
+
+                    +---------------------------+
+--------------------+   Shareware Information   +-------------------
+                    +---------------------------+
+
+Please note that this programme is distributed under the ` Shareware '
+concept. For those who don't know this is how it works. You may use this
+programme on a trial basis for 14 days after which you must register your
+copy to continue using it.
+
+Unregistered versions have an opening screen to prompt you to register
+
+If you are using a registered version please do not copy it and distribute
+it to other people. This would be the same as me publishing one of your
+photographs and not paying for the use of it. It is a breach of copyright
+and is unethical.
+
+For development of this product to continue it must be supported by you.
+
+Registration has several benefits:-
+
+1. You will be able to give ideas for future version of the programme.
+
+2. Help is available on phone if you should have a serious problem.
+
+3. You will help to meet a small part of the cost of developing this
+programme and thus encourage me to improve and extend it.
+
+This programme has taken around 2000 hours to develop over around 18 months.
+
+Please make the effort to register your copy!
+
+For a single user, registration is NZ$40. Please write or call for
+details of club or site liscence fees.
+
+DOF may not be sold nor may it be included with any package that is sold
+    without a negotiated distribution license.
+
+UNREGISTERED versions of DOF may be freely distributed, so long as ALL files,
+that is DOF.EXE, DOF.INI, DOF.DOC, are provided in unaltered form and only
+a minimal fee is charged.
+
+    Fill in and send the registration form on following page to
+    register.
+
+
+                     +---------------------------+
+---------------------+ REGISTRATION FORM FOR DOF +-------------------
+                     +---------------------------+
+
+
+
+
+Your Name            ____________________________________________
+
+Your Address         ____________________________________________
+
+                     ____________________________________________
+
+                     ____________________________________________
+
+Your Phone Number    ____________________________________________
+
+
+Single user          ________ * ___NZ$40 = TOTAL _____
+
+
+Enclose a cheque or bank cheque drawn on a New Zealand bank for the total amount
+      and send to...
+
+                      Richard Hulse
+                      XX XXXXXX XXXXX
+                      XXXXXXXXXXXXXXX
+                      New Zealand.
+
+      Phone: New Zealand (04) XXX XXXX , Overseas +64 4 XXX XXXXX
+
+DOF Features.
+
+#  Calculates DOF for any format camera.
+#  Single Entry of figures.
+#  Creation of charts that can be printed.
+#  A range of F stop lists and distances to choose from.
+#  Command line or menu driven interface.
+#  On Line Help available at most times
+#  DOF files can be copied or deleted from within DOF
+#  DOF is Desqview aware.
+#  Mouse support ( Microsoft or compatable ).
+
+System Requirements.
+---------------------
+DOF should run on the IBM PS/2, PC/AT, PC/XT, PC, PC/Jr, and on IBM 100%
+compatible computers.
+
+MINIMUM requirements are:
+
+# MS-DOS or PC-DOS version 2.0 or greater.
+
+# 256 KB of memory
+
+# Any colour or monochrome monitor with an 80-column display.
+  DOF will change video mode if it has to in order to run.
+
+# 60 KB of disk space.
+
+Files needed.
+-------------
+DOF.EXE
+and DOF.INI     if you wish to change DOFs default configuration
+
+Quickstart.
+-----------
+
+Just type DOF from the A:\> prompt and follow the menus.
+Press F1 for help.
+
+Setup.
+------
+
+The best way is to copy DOF to its own directory on your hard disk and then
+run it from your hard disks menu system.
+
+UNDERSTANDING DOF
+=================
+
+The concept of DOF or depth of field of acceptable sharpness ( `depth of
+field' for short ) is well known among photograhers. How to increase it or
+decrease it is a simple matter of changing apperture tied with a change in
+shutter speed. Most lenses come with a scale engraved on the lens. Some
+lenses unfortunately do not come with this scale. On occasion there is also
+a need to use a different DOF scale, especially if BIG enlargments are
+needed.
+
+This programme fills both those needs. The charts that DOF creates can be
+printed on any printer that suuports an IBM compatable mode. Some
+characters will only print correctly in an IBM compatable mode.
+
+Where possible I have included a screen shot to make this manual a bit
+easier to understand.
+
+Please ensure that your printer is set to an IBM compatable mode. This is
+usually a case of changing a little switch on most non-IBM printers. Failure
+to do this will cause some characters in this file to print incorrectly.
+
+
+       THE DOF PROGRAMME.
+====================================
+
+DOF should run on all IBM and most fully compatable machines.
+There will be some machines which are not hardware compatable and these will
+not run DOF.
+
+If you have a CGA card which has the `snow' problem see the configuration
+heading in this documentation.
+
+If you want to run DOF under WINDOWS or O/S 2 there is also an option to use the
+machines BIOS for screen writing. See config information for details.
+
+NB. DOF has NOT been tested under WINDOWS but should run.
+
+There is always an ACTIVE window in DOF. This is the window where your typing
+on the keyboard will have an effect. The active window is always the one with
+a bright edge. Run the programme....seeing is understanding.
+
+
+The Main menu.
+---------------
+
+This is the opening menu of the DOF programme.
+
++---[ Main Menu ]----+
+|   Single Entries   |   One of these entries will have a highlight bar through
+|     DOF Chart      |   it. The rest will have one only letter highlighted.
+|     File Menu      |   Use the up or down arrows followed by <ENTER> or use
+|  Change Defaults   |   the highlighted letters to select what you want to do.
+|  Other Features    |
+|       Exit         |
++--------------------+
+
+
+Single Entries.
+----------------
+
+You will be prompted for the required numbers one by one as shown below.
+
++-------------------------------------------------+
+|                                                 |
+|  Enter the required focal length : 50           |
+|  Enter the set f_stop : 4                       |
+|  Enter the focused distance in metres : 3       |
+|                                                 |
++-------------------------------------------------+
+
+Press <ENTER> after each entry. After the last entry the results will be
+printed on screen as below.
+
+ +---[ Main Menu ]----+    +-------------------------------------------------+
+ |   Single Entries   |    |                                                 |
+ |     DOF Chart      |    |  Enter the required focal length : 50           |
+ |     File Menu      |    |  Enter the set f_stop : 4                       |
+ |  Change Defaults   |    |  Enter the focused distance in metres : 3       |
+ |  Other Feat+----------------------------------------------+               |
+ |       Exit |                                              |  -------------+
+ +------------| The hyperfocal distance is 18.93 metres      |
+              | The near limit of the field is 2.590 metres  |
+              | The far limit of the field is 3.565 metres   |
+              |                                              |
+              |        Press a key to continue.              |
+              +----------------------------------------------+
+
+DOF Chart.
+----------
+
+You will simply be asked for a focal length. After supplying it press <ENTER>
+and the chart will be written to a file in the same directory as where you
+started DOF from. Some of the figures produced in the charts will be of
+accademic interest only and have be been included for completeness.
+
+This is what the some lines of a chart look like...
+
+*******************************************************************************
+
+Focal Length =50 mm        Maximum size of Circle of Confusion = 33.0 �m
+
+       1.0    1.4    2.0    2.8    4.0    5.6    8.0    11     16     22
+HyDis    �      �    37.87  27.05  18.93  13.52  9.470  6.887  4.735  3.444
+
+0.600  0.595  0.593  0.591  0.587  0.582  0.575  0.564  0.552  0.533  0.511
+       0.605  0.607  0.610  0.614  0.620  0.628  0.641  0.657  0.687  0.727
+
+0.800  0.792  0.788  0.783  0.777  0.768  0.755  0.738  0.717  0.684  0.649
+       0.809  0.812  0.817  0.824  0.835  0.850  0.874  0.905  0.963  1.042
+
+1.000  0.987  0.982  0.974  0.964  0.950  0.931  0.904  0.873  0.826  0.775
+       1.013  1.019  1.027  1.038  1.056  1.080  1.118  1.170  1.268  1.409
+
+*******************************************************************************
+
+The chart is headed with the values of Focal Length and Circle of confusion
+that were used.
+The numbers along the top vertical row are F stops
+The numbers down the left most column are the distances.
+
+The HyDis row refres to the HYPERFOCAL DISTANCE for that f stop. If the lense
+were set to this distance then the depth of field would extend from HALF that
+distance to infinity.
+
+
+File Menu.
+==========
+
+After making a chart select this menu. You will be presented with a sub menu
+and a list of available files thus:-
+
+ +---[ Main Menu ]----+       +[ Available Files ]+
+ |   Single Entries   |       |  56_33.DOF        |
+ |     DOF Chart      |       |  65X8_33.DOF      |
+ |     File+[ Files Menu ]+   |  70_33.DOF        |
+ |  Change |    View      |   |  87_33.DOF        |
+ |  Other F|    Copy      |   |  89_33.DOF        |
+ |       Ex|    Move      |   |  98_33.DOF        |
+ +---------|   Delete     |   |  9_33.DOF         |
+           |   Print      |   +-------------------+
+           |    Exit      |
+           +--------------+
+
+The files that are available for operations are listed in the box on the
+right of the Files Menu.
+
+View
+------
+
+This lets you have a look at the highlighted file.
+Use the up or down arrows, Page up or down, or Home and End to view the file.
+A horizontal highlight bar, which is controlled by the left and right arrow
+keys, aids the reading of figures.
+
+Copy
+-----
+
+Same as DOS's copy command. When this option is selected you will be prompted
+for a path to copy to. This can be almost any legal DOS path.
+
+Move
+-----
+
+Same as above except the file is actually moved from the DOF directory
+to where ever you enter. Files cannot however be moved between disk drives.
+
+Delete
+-------
+DOF will ask you if you are sure and will then delete the highlighted file if
+you reply Y ( for yes ).
+
+Print
+------
+
+This option when selected will print the highlighted file on the printer
+connected to the first printer port on your machine.
+
+Exit
+-----
+
+Will return you to the main menu.
+
+
+ Change Defaults
+===================
+
+Selecting this option will present you with the menu shown below.
+
++---[ Main Menu ]----+
+|   Single Entries   |
+|     DOF Chart      |
+|     File Menu      |
+|  Change +--[ Defaults Menu ]--+
+|  Other F| Circle of Confusion |
+|       Ex|     F Stop Lists    |
++---------|   Distances Lists   |
+          |        Exit         |
+          +---------------------+
+
+Circle of confusion
+--------------------
+
+The maximum allowable circle of confusion can be set between
+1 micrometre ( 1 �m ) and 1 millimetre ( 1 mm ). The default is 33 �m which is
+generally accepted as the figure to use for the 35 mm format. It can be changed
+to other ammounts to meet diferent requirements. For example other formats
+require a larger figure.
+
+
+F Stop List
+------------
+
+Select the list of F stops that DOF uses for it's charts. You have three choices
+
+...Whole F stops  eg.  1.0, 1.4, 2.0, 2.8, 4.0, 5.6  etc
+   Half f stops   eg.  4.7, 5.6, 6.8, 8.0, 9.5, 11.0, 13.5, 16.0  etc
+   Third f stops  eg.  1.0, 1.1, 1.3, 1.4, 1.6, 1.8, 2.0, 2.2   etc
+
+The default is whole f stops.
+
+Distances List
+---------------
+
+There are also three list of Distances available.
+
+general distances..range from   0.02 metre  to  10 metres
+macro distances....range from   0.01 metre  to  1.00 metre
+tele distances.....range from   10 metres  to 1000 metres
+
+Exit
+-----
+
+Will return you to the main menu.
+
+
+ Exit
+===============
+
+This Exits from DOF and restores the previous video environment.
+
+
+The Title Block
+================
+
+The following data is always displayed in the title block.
+
+TOP ROW...
+
+1. A little DV will show when running under DESQview.
+2. Who the programme is registered to. eg. [ Registered to Joe Citizen ]
+3. The current system time.
+
+BOTTOM ROW...
+
+1. The List of Distances used in DOF charts in the bottom left field.
+2. The Maximum allowable circle of confusion in the centre field
+3. The List of f stops used in DOF charts in the bottom right field.
+
++[ DV ]-------------[    UNREGISTERD COPY     ]------------[ 1234 56 ]-+
+|            DOF Depth Of Field Calculator for Photographers.          |
+|         Version X.xx (C)opyright XX Month Year by Richard Hulse.     |
+|            Use the arrows then ENTER to make a selection.            |
+|          F1 = Subject Help    F2 = General Help     X = EXIT         |
++[ General List  ]-[ Circle Of Confusion = 33.0 �m  ]-[ Whole F Stops ]+
+
+
+Every care has been taken to find any bugs in this programme however ....
+if you think you've found one fill out this form.
+                     +---------------------------+
+---------------------+      Bug Report Form      +-------------------
+                     +---------------------------+
+
+Your Name                   _____________________________________
+
+Your Address                _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+Your Phone Number           _____________________________________
+
+
+DOF Version #                _____________________________________
+
+
+Bug Description             _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+1. Computers                _____________________________________
+Configuration
+( DOS version etc. )        _____________________________________
+
+                            _____________________________________
+
+2. Names Of All
+Resident Programs           _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+                            _____________________________________
+
+
+      Send form to :  Richard Hulse
+                      XXX XXXXXXX XXX
+                      XXXXXXXXXXXXXX
+                      New Zealand.
+
+1. Please include computer type, brand name, number of drives, display type,
+   and any other hardware connected to your system.
+
+2. Please include a printout of your AUTOEXEC.BAT and CONFIG.SYS which are
+   found in the root directory of your boot disk.
+
+
+                     +---------------------------+
+---------------------+       DISCLAIMER          +-------------------
+                     +---------------------------+
+
+If you are having a problem with DOF I will endeavour to help. However as with
+all software products it is not possible to accept any liability for damage
+caused to your system. DOF has been thoroughly tested for 1 year before release
+and should cause no problems.
+
+Because of the risk involved in using any computer system
+the following applies :-
+
+I (Richard Hulse) hereby disclaim all warranties relating to this software,
+whether express or implied, including without limitation any implied warranties
+of merchantability or fitness for a particular purpose. I will not be held
+liable for any special, incidental, consequential, indirect or similar damages
+due to any reason.
+
+The persons purchasing and using the software bear all risk as to the quality
+and performance of the software.
+
+Use of the DOF programme indicates an acceptance of these conditions.
+
+                     +---------------------------+
+---------------------+        CREDITS            +-------------------
+                     +---------------------------+
+
+
+DOF was written with Microsoft Quick C Ver 1.01
+
+It was recompiled with MS C ver 5.1 by Fermanagh Consultants NZ Ltd.
+                                        WN , New Zealand.
+                                        Phone (04) 476-4538
+
+The Custom Windowing module was concieved by Phil Gibbs.
+It was written in assembly by RIVERSIDE SOFTWARE.
+
+MS-DOS is a registered trademark of Microsoft Corporation.
+PC-DOS is a registered trademark of IBM Corporation.
+IBM is a registered trademark of International Business Machines.

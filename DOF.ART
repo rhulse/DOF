@@ -1,0 +1,173 @@
+FileName : DOF.ART
+Subject : DOF programme
+
+Begins....
+
+
+What do you do if one or more of your lenses does not have a depth of field
+scale ? What say you want to do very large enlargements from 35 mm and you find
+the scale on your lens isn't right for the job. The DOF programme was written to
+get around these problems.
+
+Two years ago I needed depth of field charts for a lens that didn't have a DOF
+scale on it. I could not find anyone who sold these charts. I was, however, able
+to find a formula to work out a chart myself. To do this for a lens with 10 f
+stops and over a range of 15 or more distances involved rather a lot of
+mathematics. At the time I had started to learn the 'C' programming language and
+so turned my hand to writing a computer programme that would implement the
+formula and make charts that could be printed as well.
+
+Firstly I'll explain a few terms that relate to this subject.
+
+Hyperfocal Distance
+-------------------
+The minimum distance at which the lens records a subject sharply when it is
+focussed at infinity. If you focus a lens at the hyperfocal distance for a given
+apperture the depth of field would extend from HALF that distance through to
+infinity.
+
+Circle of confusion
+-------------------
+The disc of light that a lens forms on the focal plane ( where the film sits ).
+When the circles are small enough the eye sees them as a point and therefore
+judges them to be in focus. As parts of a scene get further from where the lens
+is focussed these circles get bigger. The point at which they become un -
+acceptable to the eye is the 'maximum allowable circle of confusion'. How far
+out of focus is acceptable depends mostly on the film size and the size of the
+final print. If you have ever had an enlargement made of a small print that
+looked sharp and then found that it not to be when blown up you will know what I
+mean!
+
+
+Focal length
+------------
+The distance between the centre ( principal ) point of the lens and the focal
+plane.
+
+
+Here are the basic formulas for calculating depth of field :-
+          ÚÄ       Ä¿
+    HD  = ³ FL X FL ³
+	  ³ ------- ³ ö 1 000 000
+          ³ FS X CC ³
+          ÀÄ       ÄÙ
+
+    NLim =  HD X FD
+            -------
+            HD + FD
+
+    FLim =  HD X FD
+            -------
+            HD - FD
+
+where   HD = the hyperfocal distance ( in metres ).
+	CC = the size of the acceptable circle of confusion ( in micrometres ).
+        FL = the focal length in millimetres ( eg. 50 mm ).
+        FD = the distance at where there lens is focussed ( in metres ).
+        NLim = the NEAR limit of the field of acceptable sharpness ( in metres ).
+	FLim = the FAR limit of the field of acceptable sharpness ( in metres ).
+
+What started out as a small project grew in size until 2000 hours later I
+finally had a fully featured working programme - DOF.
+
+DOF can calculate and print depth of field charts for any format camera. Several
+types of charts can be printed ranging from macro to tele lenses and from f1 to
+f128 in up to 1/3 of a stop increments. DOF is Desqview aware and supports
+Microsoft or compatable mice. DOF should run on all IBM and most fully hardware
+compatable machines.
+
+Using DOF
+---------
+
+There is always an ACTIVE window in DOF. This is the window where your typing
+on the keyboard will have an effect. The active window is always the one with
+a high-lighted edge ( see photo 1 ).
+
+The Single Entries option lets you enter the focal length, f stop and distance
+where the lens is focussed and will give you a single set of results ( photo 2
+).
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³+---[ Main Menu ]----+    +-------------------------------------------------+ ³
+³|   Single Entries   |    |                                                 | ³
+³|     DOF Chart      |    |  Enter the required focal length : 50           | ³
+³|     File Menu      |    |  Enter the set f_stop : 4                       | ³
+³|  Change Defaults   |    |  Enter the focused distance in metres : 3       | ³
+³|  Other Feat+----------------------------------------------+               | ³
+³|       Exit |                                              |  -------------+ ³
+³+------------| The hyperfocal distance is 18.93 metres      |                 ³
+³             | The near limit of the field is 2.590 metres  |                 ³
+³             | The far limit of the field is 3.565 metres   |                 ³
+³             |                                              |                 ³
+³             |        Press a key to continue.              |                 ³
+³             +----------------------------------------------+                 ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+The DOF Chart option is the one to use to make the actual charts. You will
+simply be asked for a focal length. After supplying it and pressing Enter a
+chart will be written to your disk. Some of the figures produced in the charts
+will be of accademic interest only and have be been included for completeness.
+To have a look at or print the chart select the Files Menu option ( photo 3 ).
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ +---[ Main Menu ]----+       +[ Available Files ]+     ³
+³ |   Single Entries   |       |  56_33.DOF        |     ³
+³ |     DOF Chart      |       |  65X8_33.DOF      |     ³
+³ |     File+[ Files Menu ]+   |  70_33.DOF        |     ³
+³ |  Change |    View      |   |  87_33.DOF        |     ³
+³ |  Other F|    Copy      |   |  89_33.DOF        |     ³
+³ |       Ex|    Move      |   |  98_33.DOF        |     ³
+³ +---------|   Delete     |   |  9_33.DOF         |     ³
+³           |   Print      |   +-------------------+     ³
+³           |    Exit      |                             ³
+³           +--------------+                             ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+The files that are available for operations are listed in the box on the right
+of the Files Menu. Selecting View ( photo 4 ) lets you move through the chart. A
+hilighted bar has been provided to help in looking up numbers. It can be moved
+to the appropriate column. Copy, Move and Delete let you perform those
+operations on the files. The Print option when selected will print the
+highlighted file on the printer connected to the first printer port on your
+machine. The Change Defaults option will present you with the menu in photo 5.
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³+---[ Main Menu ]----+             ³
+³|   Single Entries   |             ³
+³|     DOF Chart      |             ³
+³|     File Menu      |             ³
+³|  Change +--[ Defaults Menu ]--+  ³
+³|  Other F| Circle of Confusion |  ³
+³|       Ex|     F Stop Lists    |  ³
+³+---------|   Distances Lists   |  ³
+³          |        Exit         |  ³
+³          +---------------------+  ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+The Circle of confusion option lets you change the figure the programme uses in
+it calculations. The maximum allowable circle of confusion can be set between 1
+micrometre ( 1 æm ) and 1 millimetre ( 1 mm ). The default is 33 æm which is
+generally accepted as the figure to use for the 35 mm format. It can be changed
+to other ammounts to meet diferent requirements. There are three lists of F
+stops that DOF uses for it's charts. You have three choices
+
+   Whole F stops  eg.  1.0, 1.4, 2.0, 2.8, 4.0, 5.6  etc
+   Half f stops   eg.  4.7, 5.6, 6.8, 8.0, 9.5, 11.0, 13.5, 16.0  etc
+   Third f stops  eg.  1.0, 1.1, 1.3, 1.4, 1.6, 1.8, 2.0, 2.2   etc
+
+The default is whole f stops. There are also three lists of Distances available.
+
+general distances..range from   0.02 metre  to  10 metres
+macro distances....range from   0.01 metre  to  1.00 metre
+tele distances.....range from   10 metres  to 1000 metres
+
+
+Currently there aren't any other features. This option will be used for
+sugestions from purchasers of DOF. It is quite feasable to implement ANY
+photographic formula from DOF. All I need is the formula and a bit of time. If
+enough requests are recieved for a particular feature or alteration then I will
+look at doing it.
+
+DOF is available for $NZ40 from the author. This includes the disk and airmail
+postage anywhere in New Zealand. Add $NZ5 for overseas postage. Clubs that wish
+to do a bulk purchase for their members should contact the author.
+
+I have found this programme to be very useful and that is why I have decided to
+offer it to other photographers. I hope you find it useful too.
+
+......Ends
